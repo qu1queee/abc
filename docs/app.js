@@ -328,10 +328,18 @@ function goHome() {
   $("home").hidden = false;
 }
 
-async function boot() {
+async function loadCatalog() {
+  const bound = window.go && window.go.main && window.go.main.App && window.go.main.App.GetCatalog;
+  if (typeof bound === "function") {
+    return bound();
+  }
   const res = await fetch("data/letters.json", { cache: "no-store" });
   if (!res.ok) throw new Error(`letters.json ${res.status}`);
-  state.catalog = await res.json();
+  return res.json();
+}
+
+async function boot() {
+  state.catalog = await loadCatalog();
   const wanted = new URLSearchParams(location.search).get("lang") || prefs().lang || state.catalog.defaultLang || "en";
   document.querySelectorAll(".lang").forEach((btn) => {
     btn.addEventListener("click", () => openBook(btn.dataset.lang));

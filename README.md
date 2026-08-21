@@ -1,30 +1,15 @@
 # Abc
 
-## What
+Picture-book alphabet for kids (EN + ES, including Ñ). One letter per page. [Web](https://qu1queee.github.io/abc/).
 
-A picture-book alphabet for kids, in English and Español. Each letter is one page: giant uppercase, giant lowercase, then a word and picture to remember it by. [GitHub Pages](https://qu1queee.github.io/abc/) after Pages is on.
-
-## Why
-
-Same idea as [cartitas](https://github.com/qu1queee/cartitas), aimed at first letters instead of topic facts. One letter at a time, in alphabet order (Spanish includes Ñ). No accounts or scores; the last letter stays on that browser.
-
-## How
-
-Needs [Go](https://go.dev/dl/) 1.23+.
+Decks: `letters/en.yaml`, `letters/es.yaml`. Needs Go 1.25+.
 
 ```sh
-go test ./...
-go run ./cmd/abc validate
-go run ./cmd/abc web-export
+make test validate export   # CLI
+make preview                # http://127.0.0.1:8080
+make doctor                 # Wails check (once)
+make dev                    # desktop from source
+make app                    # build/bin/Abc.app
 ```
 
-Local preview:
-
-```sh
-go run ./cmd/abc web-export
-python3 -m http.server -d docs 8080
-```
-
-Then open `http://127.0.0.1:8080`.
-
-Letter decks live in `letters/en.yaml` and `letters/es.yaml`.
+Mac build (unsigned, Apple Silicon): [Releases](https://github.com/qu1queee/abc/releases) after a `v*` tag. First open: right-click → Open.

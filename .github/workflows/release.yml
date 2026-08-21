@@ -1,0 +1,42 @@
+name: Release macOS app
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.25"
+
+      - name: Install Wails
+        run: |
+          go install github.com/wailsapp/wails/v2/cmd/wails@v2.15.0
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Build app
+        run: make app
+
+      - name: Zip Abc.app
+        run: ditto -c -k --keepParent build/bin/Abc.app Abc-macos.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Abc-macos
+          path: Abc-macos.zip
+
+      - uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: Abc-macos.zip
+          generate_release_notes: true

@@ -2,6 +2,7 @@ package repo
 
 import (
 	"fmt"
+	"io/fs"
 	"os"
 	"path/filepath"
 
@@ -63,6 +64,18 @@ func LoadLanguagesFile(path string) (*LanguagesConfig, error) {
 	if err != nil {
 		return nil, err
 	}
+	return ParseLanguages(data)
+}
+
+func LoadLanguagesFS(fsys fs.FS) (*LanguagesConfig, error) {
+	data, err := fs.ReadFile(fsys, LanguagesFile)
+	if err != nil {
+		return nil, err
+	}
+	return ParseLanguages(data)
+}
+
+func ParseLanguages(data []byte) (*LanguagesConfig, error) {
 	var cfg LanguagesConfig
 	if err := yaml.Unmarshal(data, &cfg); err != nil {
 		return nil, err

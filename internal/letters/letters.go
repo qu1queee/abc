@@ -2,6 +2,7 @@ package letters
 
 import (
 	"fmt"
+	"io/fs"
 	"os"
 	"path/filepath"
 
@@ -37,9 +38,13 @@ func LoadFile(path string) (Deck, error) {
 	if err != nil {
 		return Deck{}, err
 	}
+	return Parse(data, path)
+}
+
+func Parse(data []byte, name string) (Deck, error) {
 	var deck Deck
 	if err := yaml.Unmarshal(data, &deck); err != nil {
-		return Deck{}, fmt.Errorf("%s: %w", path, err)
+		return Deck{}, fmt.Errorf("%s: %w", name, err)
 	}
 	return deck, nil
 }
@@ -48,6 +53,23 @@ func LoadAll(root string, langs []string) ([]Deck, error) {
 	out := make([]Deck, 0, len(langs))
 	for _, lang := range langs {
 		deck, err := Load(root, lang)
+		if err != nil {
+			return nil, err
+		}
+		out = append(out, deck)
+	}
+	return out, nil
+}
+
+func LoadAllFS(fsys fs.FS, langs []string) ([]Deck, error) {
+	out := make([]Deck, 0, len(langs))
+	for _, lang := range langs {
+		name := "letters/" + lang + ".yaml"
+		data, err := fs.ReadFile(fsys, name)
+		if err != nil {
+			return nil, err
+		}
+		deck, err := Parse(data, name)
 		if err != nil {
 			return nil, err
 		}
