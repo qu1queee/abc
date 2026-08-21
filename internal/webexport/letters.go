@@ -2,6 +2,7 @@ package webexport
 
 import (
 	"encoding/json"
+	"io/fs"
 	"os"
 	"path/filepath"
 	"time"
@@ -26,11 +27,28 @@ func BuildCatalog(root string) (Catalog, error) {
 	if err != nil {
 		return Catalog{}, err
 	}
+	return catalogFrom(cfg.Default, decks), nil
+}
+
+func BuildCatalogFS(fsys fs.FS) (Catalog, error) {
+	cfg, err := repo.LoadLanguagesFS(fsys)
+	if err != nil {
+		return Catalog{}, err
+	}
+	langs := repo.LanguageCodes(cfg)
+	decks, err := letters.LoadAllFS(fsys, langs)
+	if err != nil {
+		return Catalog{}, err
+	}
+	return catalogFrom(cfg.Default, decks), nil
+}
+
+func catalogFrom(defaultLang string, decks []letters.Deck) Catalog {
 	return Catalog{
 		GeneratedAt: time.Now().UTC().Format(time.RFC3339),
-		DefaultLang: cfg.Default,
+		DefaultLang: defaultLang,
 		Decks:       decks,
-	}, nil
+	}
 }
 
 func WriteLetters(root string) (string, int, error) {

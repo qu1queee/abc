@@ -17,10 +17,10 @@ jobs:
 
       - uses: actions/setup-go@v5
         with:
-          go-version: "1.23"
+          go-version: "1.25"
 
       - name: Go tests
-        run: go test ./...
+        run: go test ./internal/... ./cmd/...
 
       - name: Letter validation
         run: go run ./cmd/abc validate

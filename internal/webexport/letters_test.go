@@ -37,6 +37,29 @@ letters:
 	}
 }
 
+func TestBuildCatalogFS(t *testing.T) {
+	root := t.TempDir()
+	write(t, filepath.Join(root, "languages.yaml"), "default: es\nlanguages:\n  es:\n    name: Español\n")
+	write(t, filepath.Join(root, "letters", "es.yaml"), `lang: es
+name: Español
+letters:
+  - id: a
+    upper: A
+    lower: a
+    name: a
+    sound: a de árbol
+    word: árbol
+    picture: tree
+`)
+	cat, err := BuildCatalogFS(os.DirFS(root))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if cat.DefaultLang != "es" || len(cat.Decks) != 1 || cat.Decks[0].Letters[0].Word != "árbol" {
+		t.Fatalf("%+v", cat)
+	}
+}
+
 func write(t *testing.T, path, body string) {
 	t.Helper()
 	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {

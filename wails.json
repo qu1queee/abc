@@ -1,0 +1,12 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Abc",
+  "outputfilename": "Abc",
+  "frontend:dir": "docs",
+  "frontend:install": "",
+  "frontend:build": "",
+  "wailsjsdir": "desktop",
+  "author": {
+    "name": "Enrique Encalada"
+  }
+}
