@@ -1,0 +1,495 @@
+{
+  "generatedAt": "2026-08-21T13:37:40Z",
+  "defaultLang": "en",
+  "decks": [
+    {
+      "lang": "en",
+      "name": "English",
+      "letters": [
+        {
+          "id": "a",
+          "upper": "A",
+          "lower": "a",
+          "name": "ay",
+          "sound": "a as in apple",
+          "word": "apple",
+          "picture": "apple"
+        },
+        {
+          "id": "b",
+          "upper": "B",
+          "lower": "b",
+          "name": "bee",
+          "sound": "b as in ball",
+          "word": "ball",
+          "picture": "ball"
+        },
+        {
+          "id": "c",
+          "upper": "C",
+          "lower": "c",
+          "name": "see",
+          "sound": "c as in cat",
+          "word": "cat",
+          "picture": "cat"
+        },
+        {
+          "id": "d",
+          "upper": "D",
+          "lower": "d",
+          "name": "dee",
+          "sound": "d as in dog",
+          "word": "dog",
+          "picture": "dog"
+        },
+        {
+          "id": "e",
+          "upper": "E",
+          "lower": "e",
+          "name": "ee",
+          "sound": "e as in egg",
+          "word": "egg",
+          "picture": "egg"
+        },
+        {
+          "id": "f",
+          "upper": "F",
+          "lower": "f",
+          "name": "ef",
+          "sound": "f as in fish",
+          "word": "fish",
+          "picture": "fish"
+        },
+        {
+          "id": "g",
+          "upper": "G",
+          "lower": "g",
+          "name": "jee",
+          "sound": "g as in goat",
+          "word": "goat",
+          "picture": "goat"
+        },
+        {
+          "id": "h",
+          "upper": "H",
+          "lower": "h",
+          "name": "aitch",
+          "sound": "h as in hat",
+          "word": "hat",
+          "picture": "hat"
+        },
+        {
+          "id": "i",
+          "upper": "I",
+          "lower": "i",
+          "name": "eye",
+          "sound": "i as in ice",
+          "word": "ice",
+          "picture": "ice"
+        },
+        {
+          "id": "j",
+          "upper": "J",
+          "lower": "j",
+          "name": "jay",
+          "sound": "j as in juice",
+          "word": "juice",
+          "picture": "juice"
+        },
+        {
+          "id": "k",
+          "upper": "K",
+          "lower": "k",
+          "name": "kay",
+          "sound": "k as in kite",
+          "word": "kite",
+          "picture": "kite"
+        },
+        {
+          "id": "l",
+          "upper": "L",
+          "lower": "l",
+          "name": "el",
+          "sound": "l as in leaf",
+          "word": "leaf",
+          "picture": "leaf"
+        },
+        {
+          "id": "m",
+          "upper": "M",
+          "lower": "m",
+          "name": "em",
+          "sound": "m as in moon",
+          "word": "moon",
+          "picture": "moon"
+        },
+        {
+          "id": "n",
+          "upper": "N",
+          "lower": "n",
+          "name": "en",
+          "sound": "n as in nest",
+          "word": "nest",
+          "picture": "nest"
+        },
+        {
+          "id": "o",
+          "upper": "O",
+          "lower": "o",
+          "name": "oh",
+          "sound": "o as in orange",
+          "word": "orange",
+          "picture": "orange"
+        },
+        {
+          "id": "p",
+          "upper": "P",
+          "lower": "p",
+          "name": "pee",
+          "sound": "p as in pear",
+          "word": "pear",
+          "picture": "pear"
+        },
+        {
+          "id": "q",
+          "upper": "Q",
+          "lower": "q",
+          "name": "cue",
+          "sound": "q as in queen",
+          "word": "queen",
+          "picture": "queen"
+        },
+        {
+          "id": "r",
+          "upper": "R",
+          "lower": "r",
+          "name": "ar",
+          "sound": "r as in rain",
+          "word": "rain",
+          "picture": "rain"
+        },
+        {
+          "id": "s",
+          "upper": "S",
+          "lower": "s",
+          "name": "ess",
+          "sound": "s as in sun",
+          "word": "sun",
+          "picture": "sun"
+        },
+        {
+          "id": "t",
+          "upper": "T",
+          "lower": "t",
+          "name": "tee",
+          "sound": "t as in tree",
+          "word": "tree",
+          "picture": "tree"
+        },
+        {
+          "id": "u",
+          "upper": "U",
+          "lower": "u",
+          "name": "you",
+          "sound": "u as in umbrella",
+          "word": "umbrella",
+          "picture": "umbrella"
+        },
+        {
+          "id": "v",
+          "upper": "V",
+          "lower": "v",
+          "name": "vee",
+          "sound": "v as in violin",
+          "word": "violin",
+          "picture": "violin"
+        },
+        {
+          "id": "w",
+          "upper": "W",
+          "lower": "w",
+          "name": "double-u",
+          "sound": "w as in whale",
+          "word": "whale",
+          "picture": "whale"
+        },
+        {
+          "id": "x",
+          "upper": "X",
+          "lower": "x",
+          "name": "ex",
+          "sound": "x as in x-ray",
+          "word": "x-ray",
+          "picture": "xray"
+        },
+        {
+          "id": "y",
+          "upper": "Y",
+          "lower": "y",
+          "name": "why",
+          "sound": "y as in yarn",
+          "word": "yarn",
+          "picture": "yarn"
+        },
+        {
+          "id": "z",
+          "upper": "Z",
+          "lower": "z",
+          "name": "zee",
+          "sound": "z as in zebra",
+          "word": "zebra",
+          "picture": "zebra"
+        }
+      ]
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "letters": [
+        {
+          "id": "a",
+          "upper": "A",
+          "lower": "a",
+          "name": "a",
+          "sound": "a de árbol",
+          "word": "árbol",
+          "picture": "tree"
+        },
+        {
+          "id": "b",
+          "upper": "B",
+          "lower": "b",
+          "name": "be",
+          "sound": "b de barco",
+          "word": "barco",
+          "picture": "boat"
+        },
+        {
+          "id": "c",
+          "upper": "C",
+          "lower": "c",
+          "name": "ce",
+          "sound": "c de casa",
+          "word": "casa",
+          "picture": "house"
+        },
+        {
+          "id": "d",
+          "upper": "D",
+          "lower": "d",
+          "name": "de",
+          "sound": "d de dinosaurio",
+          "word": "dinosaurio",
+          "picture": "dinosaur"
+        },
+        {
+          "id": "e",
+          "upper": "E",
+          "lower": "e",
+          "name": "e",
+          "sound": "e de elefante",
+          "word": "elefante",
+          "picture": "elephant"
+        },
+        {
+          "id": "f",
+          "upper": "F",
+          "lower": "f",
+          "name": "efe",
+          "sound": "f de foca",
+          "word": "foca",
+          "picture": "seal"
+        },
+        {
+          "id": "g",
+          "upper": "G",
+          "lower": "g",
+          "name": "ge",
+          "sound": "g de gato",
+          "word": "gato",
+          "picture": "cat"
+        },
+        {
+          "id": "h",
+          "upper": "H",
+          "lower": "h",
+          "name": "hache",
+          "sound": "h de hoja",
+          "word": "hoja",
+          "picture": "leaf"
+        },
+        {
+          "id": "i",
+          "upper": "I",
+          "lower": "i",
+          "name": "i",
+          "sound": "i de isla",
+          "word": "isla",
+          "picture": "island"
+        },
+        {
+          "id": "j",
+          "upper": "J",
+          "lower": "j",
+          "name": "jota",
+          "sound": "j de jirafa",
+          "word": "jirafa",
+          "picture": "giraffe"
+        },
+        {
+          "id": "k",
+          "upper": "K",
+          "lower": "k",
+          "name": "ka",
+          "sound": "k de koala",
+          "word": "koala",
+          "picture": "koala"
+        },
+        {
+          "id": "l",
+          "upper": "L",
+          "lower": "l",
+          "name": "ele",
+          "sound": "l de luna",
+          "word": "luna",
+          "picture": "moon"
+        },
+        {
+          "id": "m",
+          "upper": "M",
+          "lower": "m",
+          "name": "eme",
+          "sound": "m de manzana",
+          "word": "manzana",
+          "picture": "apple"
+        },
+        {
+          "id": "n",
+          "upper": "N",
+          "lower": "n",
+          "name": "ene",
+          "sound": "n de nido",
+          "word": "nido",
+          "picture": "nest"
+        },
+        {
+          "id": "n-tilde",
+          "upper": "Ñ",
+          "lower": "ñ",
+          "name": "eñe",
+          "sound": "ñ de ñandú",
+          "word": "ñandú",
+          "picture": "rhea"
+        },
+        {
+          "id": "o",
+          "upper": "O",
+          "lower": "o",
+          "name": "o",
+          "sound": "o de oso",
+          "word": "oso",
+          "picture": "bear"
+        },
+        {
+          "id": "p",
+          "upper": "P",
+          "lower": "p",
+          "name": "pe",
+          "sound": "p de perro",
+          "word": "perro",
+          "picture": "dog"
+        },
+        {
+          "id": "q",
+          "upper": "Q",
+          "lower": "q",
+          "name": "cu",
+          "sound": "q de queso",
+          "word": "queso",
+          "picture": "cheese"
+        },
+        {
+          "id": "r",
+          "upper": "R",
+          "lower": "r",
+          "name": "erre",
+          "sound": "r de rana",
+          "word": "rana",
+          "picture": "frog"
+        },
+        {
+          "id": "s",
+          "upper": "S",
+          "lower": "s",
+          "name": "ese",
+          "sound": "s de sol",
+          "word": "sol",
+          "picture": "sun"
+        },
+        {
+          "id": "t",
+          "upper": "T",
+          "lower": "t",
+          "name": "te",
+          "sound": "t de tren",
+          "word": "tren",
+          "picture": "train"
+        },
+        {
+          "id": "u",
+          "upper": "U",
+          "lower": "u",
+          "name": "u",
+          "sound": "u de uva",
+          "word": "uva",
+          "picture": "grape"
+        },
+        {
+          "id": "v",
+          "upper": "V",
+          "lower": "v",
+          "name": "uve",
+          "sound": "v de vaca",
+          "word": "vaca",
+          "picture": "cow"
+        },
+        {
+          "id": "w",
+          "upper": "W",
+          "lower": "w",
+          "name": "uve doble",
+          "sound": "w de waffle",
+          "word": "waffle",
+          "picture": "waffle"
+        },
+        {
+          "id": "x",
+          "upper": "X",
+          "lower": "x",
+          "name": "equis",
+          "sound": "x de xilófono",
+          "word": "xilófono",
+          "picture": "xylophone"
+        },
+        {
+          "id": "y",
+          "upper": "Y",
+          "lower": "y",
+          "name": "ye",
+          "sound": "y de yate",
+          "word": "yate",
+          "picture": "yacht"
+        },
+        {
+          "id": "z",
+          "upper": "Z",
+          "lower": "z",
+          "name": "zeta",
+          "sound": "z de zapato",
+          "word": "zapato",
+          "picture": "shoe"
+        }
+      ]
+    }
+  ]
+}
