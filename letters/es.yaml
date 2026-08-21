@@ -1,0 +1,192 @@
+lang: es
+name: Español
+letters:
+  - id: a
+    upper: A
+    lower: a
+    name: a
+    sound: a de árbol
+    word: árbol
+    picture: tree
+  - id: b
+    upper: B
+    lower: b
+    name: be
+    sound: b de barco
+    word: barco
+    picture: boat
+  - id: c
+    upper: C
+    lower: c
+    name: ce
+    sound: c de casa
+    word: casa
+    picture: house
+  - id: d
+    upper: D
+    lower: d
+    name: de
+    sound: d de dinosaurio
+    word: dinosaurio
+    picture: dinosaur
+  - id: e
+    upper: E
+    lower: e
+    name: e
+    sound: e de elefante
+    word: elefante
+    picture: elephant
+  - id: f
+    upper: F
+    lower: f
+    name: efe
+    sound: f de foca
+    word: foca
+    picture: seal
+  - id: g
+    upper: G
+    lower: g
+    name: ge
+    sound: g de gato
+    word: gato
+    picture: cat
+  - id: h
+    upper: H
+    lower: h
+    name: hache
+    sound: h de hoja
+    word: hoja
+    picture: leaf
+  - id: i
+    upper: I
+    lower: i
+    name: i
+    sound: i de isla
+    word: isla
+    picture: island
+  - id: j
+    upper: J
+    lower: j
+    name: jota
+    sound: j de jirafa
+    word: jirafa
+    picture: giraffe
+  - id: k
+    upper: K
+    lower: k
+    name: ka
+    sound: k de koala
+    word: koala
+    picture: koala
+  - id: l
+    upper: L
+    lower: l
+    name: ele
+    sound: l de luna
+    word: luna
+    picture: moon
+  - id: m
+    upper: M
+    lower: m
+    name: eme
+    sound: m de manzana
+    word: manzana
+    picture: apple
+  - id: n
+    upper: N
+    lower: n
+    name: ene
+    sound: n de nido
+    word: nido
+    picture: nest
+  - id: n-tilde
+    upper: Ñ
+    lower: ñ
+    name: eñe
+    sound: ñ de ñandú
+    word: ñandú
+    picture: rhea
+  - id: o
+    upper: O
+    lower: o
+    name: o
+    sound: o de oso
+    word: oso
+    picture: bear
+  - id: p
+    upper: P
+    lower: p
+    name: pe
+    sound: p de perro
+    word: perro
+    picture: dog
+  - id: q
+    upper: Q
+    lower: q
+    name: cu
+    sound: q de queso
+    word: queso
+    picture: cheese
+  - id: r
+    upper: R
+    lower: r
+    name: erre
+    sound: r de rana
+    word: rana
+    picture: frog
+  - id: s
+    upper: S
+    lower: s
+    name: ese
+    sound: s de sol
+    word: sol
+    picture: sun
+  - id: t
+    upper: T
+    lower: t
+    name: te
+    sound: t de tren
+    word: tren
+    picture: train
+  - id: u
+    upper: U
+    lower: u
+    name: u
+    sound: u de uva
+    word: uva
+    picture: grape
+  - id: v
+    upper: V
+    lower: v
+    name: uve
+    sound: v de vaca
+    word: vaca
+    picture: cow
+  - id: w
+    upper: W
+    lower: w
+    name: uve doble
+    sound: w de waffle
+    word: waffle
+    picture: waffle
+  - id: x
+    upper: X
+    lower: x
+    name: equis
+    sound: x de xilófono
+    word: xilófono
+    picture: xylophone
+  - id: y
+    upper: Y
+    lower: y
+    name: ye
+    sound: y de yate
+    word: yate
+    picture: yacht
+  - id: z
+    upper: Z
+    lower: z
+    name: zeta
+    sound: z de zapato
+    word: zapato
+    picture: shoe

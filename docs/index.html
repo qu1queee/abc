@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="home" id="home">
+      <h1 class="mark" aria-label="ABC"><span class="ch a">A</span><span class="ch b">B</span><span class="ch c">C</span></h1>
+      <p class="lede">Tap a book. Then tap the big letter to hear it.</p>
+      <p class="lede es">Toca un libro. Luego toca la letra para escucharla.</p>
+      <div class="lang-row">
+        <button type="button" class="lang cover" data-lang="en">
+          <span class="cover-letter">A</span>
+          <span class="cover-name">English</span>
+        </button>
+        <button type="button" class="lang cover" data-lang="es">
+          <span class="cover-letter">Ñ</span>
+          <span class="cover-name">Español</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="book" id="book" hidden>
+      <header class="top">
+        <button type="button" id="back" class="text">Home</button>
+        <p class="meta" id="meta"></p>
+        <button type="button" id="hear" class="icon" aria-label="Hear">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a3.5 3.5 0 0 0-1.8-3.1v6.2A3.5 3.5 0 0 0 16.5 12zm-1.8-7.2v2.1A6.5 6.5 0 0 1 20 12a6.5 6.5 0 0 1-5.3 6.1v2.1A8.5 8.5 0 0 0 22 12a8.5 8.5 0 0 0-7.3-8.2z"/></svg>
+        </button>
+      </header>
+
+      <nav class="rail" id="rail" aria-label="Alphabet"></nav>
+
+      <article class="page" id="page">
+        <button type="button" class="hotspot" id="hotspot">
+          <span class="glyph" id="glyph"></span>
+          <span class="speak-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a3.5 3.5 0 0 0-1.8-3.1v6.2A3.5 3.5 0 0 0 16.5 12z"/></svg>
+          </span>
+        </button>
+        <figure class="art" id="art" hidden></figure>
+        <p class="word" id="word" hidden></p>
+        <p class="sound" id="sound"></p>
+        <div class="choices" id="choices" hidden></div>
+        <p class="feedback" id="feedback" role="status"></p>
+      </article>
+
+      <div class="stages" id="stages"></div>
+
+      <div class="controls">
+        <button type="button" id="again">Again</button>
+        <button type="button" id="next" class="primary">Next</button>
+      </div>
+    </section>
+  </main>
+  <canvas id="confetti" hidden></canvas>
+  <script src="pictures.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

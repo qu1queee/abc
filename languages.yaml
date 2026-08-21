@@ -1,0 +1,9 @@
+# Supported book languages. Letter decks live under letters/{lang}.yaml.
+
+default: en
+
+languages:
+  en:
+    name: English
+  es:
+    name: Español
